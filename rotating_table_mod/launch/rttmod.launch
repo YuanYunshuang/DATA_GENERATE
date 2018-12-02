@@ -1,0 +1,6 @@
+<launch>
+    <arg name = "StartDir" default="-1"/>
+    <arg name = "WaitTime" default="30.0"/>
+    <node pkg="rotating_table_mod" type="rotating_table_mod_node" name="rotating_table" output="screen" args="$(arg  StartDir) $(arg WaitTime)"/>
+
+</launch>
